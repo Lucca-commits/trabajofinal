@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - BurgerHouse</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo_hamburg.jpg" alt="BurgerHouse Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menú</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="menu-hero py-5 text-center text-white">
+        <div class="container">
+            <h1 class="display-4">Nuestro Menú</h1>
+            <p class="lead">Las mejores hamburguesas artesanales de la ciudad</p>
+        </div>
+    </section>
+
+    <!-- Filtros del Menú -->
+    <section class="menu-categories py-4">
+        <div class="container">
+            <div class="row g-3 justify-content-center">
+                <div class="col-auto">
+                    <button class="btn btn-lg btn-outline-primary active" data-filter="all">Todo</button>
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-lg btn-outline-primary" data-filter="hamburguesas">Hamburguesas</button>
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-lg btn-outline-primary" data-filter="acompañamientos">Acompañamientos</button>
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-lg btn-outline-primary" data-filter="bebidas">Bebidas</button>
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-lg btn-outline-primary" data-filter="postres">Postres</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú Grid -->
+    <section class="menu-items py-5">
+        <div class="container">
+            <div class="row g-4" id="menu-container">
+                <!-- Hamburguesas -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="hamburguesas">
+                    <div class="card h-100">
+                        <img src="img/2148868238.jpg" class="card-img-top" alt="Hamburguesa Clásica">
+                        <div class="card-body">
+                            <h3 class="card-title">Clásica</h3>
+                            <p class="card-text">Medallón de carne 100% vacuna, lechuga, tomate, cebolla y nuestra salsa especial.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$1200</span>
+                                <button class="btn btn-primary agregar-carrito" 
+                                        data-id="1" 
+                                        data-nombre="Hamburguesa Clásica" 
+                                        data-precio="1200">
+                                    <i class="bi bi-cart-plus"></i> Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 menu-item" data-category="hamburguesas">
+                    <div class="card h-100">
+                        <img src="img/56398.jpg" class="card-img-top" alt="Hamburguesa Doble">
+                        <div class="card-body">
+                            <h3 class="card-title">Doble Cheese</h3>
+                            <p class="card-text">Doble medallón, doble cheddar, bacon crujiente, cebolla caramelizada.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$1500</span>
+                                <button class="btn btn-primary agregar-carrito" 
+                                        data-id="2" 
+                                        data-nombre="Doble Cheese" 
+                                        data-precio="1500">
+                                    <i class="bi bi-cart-plus"></i> Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 menu-item" data-category="hamburguesas">
+                    <div class="card h-100">
+                        <img src="img/Photo a burger with bacon and cheese on a wooden table.jfif " class="card-img-top" alt="Hamburguesa Doble">
+                        <div class="card-body">
+                            <h3 class="card-title">Bacon Cheeseburger</h3>
+                            <p class="card-text">Doble medallón, doble cheddar, bacon crujiente, lechuga.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$1500</span>
+                                <button class="btn btn-primary agregar-carrito" 
+                                        data-id="2" 
+                                        data-nombre="Doble Cheese" 
+                                        data-precio="1500">
+                                    <i class="bi bi-cart-plus"></i> Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acompañamientos -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="acompañamientos">
+                    <div class="card h-100">
+                        <img src="img/4899.jpg" class="card-img-top" alt="Papas Fritas">
+                        <div class="card-body">
+                            <h3 class="card-title">Papas Fritas</h3>
+                            <p class="card-text">Crujientes papas fritas con sal marina.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$800</span>
+                                <button class="btn btn-primary agregar-carrito" 
+                                        data-id="3" 
+                                        data-nombre="Papas Fritas" 
+                                        data-precio="800">
+                                    <i class="bi bi-cart-plus"></i> Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="bebidas">
+                    <div class="card h-100">
+                        <img src="img/your choice of drinks.jfif" class="card-img-top" alt="Gaseosa">
+                        <div class="card-body">
+                            <h3 class="card-title">Gaseosa</h3>
+                            <p class="card-text">Coca-Cola, Sprite, Fanta (500ml)</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$500</span>
+                                <button class="btn btn-primary agregar-carrito" 
+                                        data-id="4" 
+                                        data-nombre="Gaseosa" 
+                                        data-precio="500">
+                                    <i class="bi bi-cart-plus"></i> Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postres -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="postres">
+                    <div class="card h-100">
+                        <img src="img/582.jpg" class="card-img-top" alt="Brownie">
+                        <div class="card-body">
+                            <h3 class="card-title">Brownie</h3>
+                            <p class="card-text">Brownie casero con helado de vainilla y salsa de chocolate.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$700</span>
+                                <button class="btn btn-primary agregar-carrito" 
+                                        data-id="5" 
+                                        data-nombre="Brownie" 
+                                        data-precio="700">
+                                    <i class="bi bi-cart-plus"></i> Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito Flotante -->
+    <div class="cart-floating" id="cart-floating">
+        <button class="cart-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+            <i class="bi bi-cart3"></i>
+            <span class="cart-counter" id="carrito-counter">0</span>
+        </button>
+    </div>
+
+    <!-- Offcanvas Carrito -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Tu Pedido</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group mb-3" id="lista-carrito">
+                <!-- Items del carrito irán aquí -->
+            </ul>
+            <div class="cart-total">
+                <strong>Total:</strong>
+                <span id="carrito-total">$0.00</span>
+            </div>
+            <button class="btn btn-primary w-100 mt-3" onclick="finalizarCompra()">
+                Finalizar Pedido
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© 2024 BurgerHouse. Todos los derechos reservados.</p>
+                    <p>Alumno: Lucca Mamani-Milenka Kamenskiy<br>
+                       Materia: Desarollo II-Programación I<br>
+                       Comisión: 2do 1era</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
